@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" style="font-size:100%">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet " href="../CSS/estilos.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <title>Con amor de Paquita</title>
+    <style>
+        .titulo {
+            margin: 20px 0; /* Ajusta el valor según tus necesidades */
+        }
+
+        /* Asegúrate de que las otras partes de tu CSS permanezcan igual */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* Otros estilos existentes... */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <nav>
+                <ul>
+                    <!--añadimos los distintos aspectos del menú para llevar a sus correspondientes páginas o apartados. El logo actua como Home o Inicio-->
+                    <li class="logo"><a href="../HTML/PRAC_1.html"><img src="../IMG/logo-con amor.png" alt="logo"></a></li>
+                    <li><a href="../HTML/PRAC_1.html#bio">BIOGRAFÍA</a></li>
+                    <li><a href="../HTML/PRAC_1.html#pedidos">PEDIDOS</a></li>
+                    <li><a href="../HTML/PRAC_1.html#fotos">FOTOS</a></li>
+                    <li><a href="../HTML/PRAC_1.html#amor">MÁS AMOR</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="parallax">
+            <h1>CON AMOR DE PAQUITA</h1>
+            <h3>&#127856 &#10024 Endulzando tus momentos, un bocado a la vez &#10024 &#127856</h3>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
+                <aside aria-labelledby="navegacion lateral">
+                    <!-- Columna lateral fija -->
+                
+                    <h2>Menú Lateral</h2>
+                    <p>Este es un texto de ejemplo en la barra lateral.</p>
+                    <img src="imagen1.jpg" alt="Imagen 1" class="sidebar-img">
+                    <p>Texto debajo de la primera imagen.</p>
+                    <img src="imagen2.jpg" alt="Imagen 2" class="sidebar-img">
+                    <p>Texto debajo de la segunda imagen.</p>
+                </aside>
+            </div>
+        </div>
+
+        <main>
+            <div class="col-xs-12 col-sm-9 col-md-6 col-lg-7">
+                <div id="bio">
+                    <h2>BIOGRAFÍA</h2>
+                    <svg width="0" height="0">
+                        <defs>
+                            <clipPath id="irregular-shape" clipPathUnits="objectBoundingBox">
+                                <path d="M0.5,0 Q0.25,0.5 0.5,1 Q0.75,0.5 0.5,0 Z" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                
+                    <div class="container">
+                        <img src="../IMG/paquitaCora.png" alt="Irregular Shape" class="irregular">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+                            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel 
+                            scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere 
+                            velit aliquet. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor. Nullam id dolor id nibh 
+                            ultricies vehicula ut id elit.
+                        </div>
+                    </div>
+                        <!--
+                            <br>
+                            <img class="img_left" src="../IMG/paquita2.jpg" alt="Una foto de paquita en una fiesta rosa">
+                            <h4>Con Amor de Paquita es una encantadora pastelería artesanal, creada con el corazón y la pasión de Paquita, una talentosa repostera que siempre soñó con endulzar la vida de los demás. </h4>
+                            <h4>Con un enfoque en la personalización y el detalle, sus pasteles, diseñados para ocasiones especiales, son verdaderas obras de arte comestibles, hechas con dedicación y, sobre todo, mucho amor.</h4>
+                            <br>
+                        !-->
+
+                </div>
+            </div>
+        
+
+            <div id="p5js">
+                <script src="../JS/P5JS/sketch.js"></script>
+            </div>
+
+            <div id="pedidos">
+                <h2>PEDIDOS</h2>
+                <div class="envios">
+                    <h3>RECOGER EN TIENDA</h3>
+                    <h3>ENVÍO A DOMICILIO</h3>
+                    <div class="img-envios"><img src="../IMG/enTienda.png" alt="unos cupcakes rosas con una corona"></div>
+                    <div class="img-envios"><img src="../IMG/envioDomicilio.png" alt="un pastel rosa con globos y una vela del número 1 en el campo"></div>
+                </div>
+
+                <div>
+                    <iframe src="../glitch/index.html" width="100%" height="500px" style="border:none;"></iframe>
+                </div>
+            
+                <div id="fotos">
+                    <h2>FOTOS</h2>
+                    <div class="gallery">
+                        <div class="gallery-item"><img src="../IMG/pexels-skyler-ewing-266953-10171573.jpg" alt="Cakepops rosa"></div>
+                        <div class="gallery-item"><img src="../IMG/pikaso_edit.jpeg" alt="Tarta blanca con birutas de colores"></div>
+                        <div class="gallery-item"><img src="../IMG/pexels-karleykosmos-2064449.jpg" alt="Donuts rosa de unicornio"></div>
+                        <div class="gallery-item"><img src="../IMG/delicious-sweet-cake-with-strawberries-basier-plate.jpg" alt="Tarta redvelvet"></div>
+                        <div class="gallery-item"><img src="../IMG/beautiful-delicious-dessert-strawberry-cream-fruit.jpg" alt="2 cupcakes de frambuesa"></div>
+                        <div class="gallery-item"><img src="../IMG/pexels-marcia-salido-346903577-14133141.jpg" alt="Galletas con m&m's de color rosa y rojo"></div>
+                        <div class="gallery-item"><img src="../IMG/birthday-cake-blue-table.jpg" alt="Tata con sirope de fresa"></div>
+                        <div class="gallery-item"><img src="../IMG/top-view-delicious-valentine-s-day-cookies.jpg" alt="6 galletas en forma de corazón"></div>
+                        <div class="gallery-item"><img src="../IMG/pexels-sergio-arreola-208344354-15836165.jpg" alt="Tarta en forma de corazón con glaseado rosa y mariposas"></div>
+                    </div>
+                </div>
+
+                <div id="amor">
+                    <h2>MÁS AMOR</h2>
+                    <iframe src="../glitch 2/index.html" width="100%" height="500px" style="border:none;"></iframe>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div>
+            <ul type="none">
+                <br>
+                <li>Teléfono: 612 34 56 78</li>
+                <li>Gmail: HMX_Events@gmeil.com</li>
+                <li>Av. De la Carolina, 790, Guarromán</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
